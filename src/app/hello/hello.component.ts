@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
   myname = "Caspian"
+  inval = "hey there"
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  callMyFunction() {
+    this.inval = this.inval + "hey"
   }
 
 }
