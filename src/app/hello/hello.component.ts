@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HelloComponent implements OnInit {
   myname = "Caspian"
   inval = "hey there"
+  part_disabled = true
 
   constructor() { }
 
@@ -16,6 +17,7 @@ export class HelloComponent implements OnInit {
 
   callMyFunction() {
     this.inval = this.inval + "hey"
+    this.part_disabled = !this.part_disabled
   }
 
 }
