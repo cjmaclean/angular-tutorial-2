@@ -1,0 +1,7 @@
+tr > th {
+    background-color: gray;
+    color: white;
+}
+tr {
+    background-color: lightgray;
+}
