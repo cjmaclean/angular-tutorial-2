@@ -20,4 +20,9 @@ export class HelloComponent implements OnInit {
     this.part_disabled = !this.part_disabled
   }
 
+  updateFromEvent(e: Event) {
+    //return
+    this.inval = (e.target as HTMLInputElement).value
+  }
+
 }

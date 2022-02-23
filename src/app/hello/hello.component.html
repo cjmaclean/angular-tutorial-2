@@ -1,4 +1,4 @@
 <p>hello works! {{ 2 + 5 }} Customised by {{ myname }}</p>
-<input type="text" [value]="inval">
+<input type="text" [value]="inval" (input)="updateFromEvent($event)">
 <button (click)="callMyFunction()">Hey there!</button>
 <input type="text" value="{{inval}}" [disabled]="part_disabled">
