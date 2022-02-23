@@ -6,6 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hello.component.css']
 })
 export class HelloComponent implements OnInit {
+
+  courses_data = [
+    {
+      title: "Breadboard computer",
+      completed: false,
+      next_chapter: "https://youtu.be/kRlSFm519Bo",
+      next_chapter_embed: "https://www.youtube.com/embed/kRlSFm519Bo"
+    },
+    {
+      title: "Maths puzzles",
+      completed: false,
+      next_chapter: "https://youtu.be/tjJ2qL9uaz4",
+      next_chapter_embed: "https://www.youtube.com/embed/tjJ2qL9uaz4"
+    }
+  ]
+
   myname = "Caspian"
   inval = "hey there"
   part_disabled = true

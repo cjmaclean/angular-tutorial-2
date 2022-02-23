@@ -3,3 +3,30 @@
 <button (click)="callMyFunction()">Hey there!</button>
 <input type="text" value="{{inval}}" [disabled]="part_disabled">
 <input type="text" [(ngModel)]="inval">
+
+<table>
+    <tr>
+        <td>Course</td>
+        <td>Completed</td>
+        <td>Next Chapter</td>
+        <td>Next Chapter embed</td>
+    </tr>
+    <tr *ngFor="let course of courses_data">
+        <td>
+            {{course.title}}
+        </td>
+        <td>
+            {{course.completed}}
+        </td>
+        <td>
+            <a href="{{course.next_chapter}}">{{course.next_chapter}} </a>
+        </td>
+        <td>
+            <iframe width="140" height="79" src="https://www.youtube.com/embed/tjJ2qL9uaz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
+            <iframe width="140" height="79" src="{{course.next_chapter_embed}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
+            Unsupported - data needs to be sanitised.
+        </td>
+    </tr>
+</table>
