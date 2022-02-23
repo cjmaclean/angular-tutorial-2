@@ -6,12 +6,16 @@
 
 <table>
     <tr>
+        <td>Number</td>
         <td>Course</td>
         <td>Completed</td>
         <td>Next Chapter</td>
         <td>Next Chapter embed</td>
     </tr>
-    <tr *ngFor="let course of courses_data">
+    <tr *ngFor="let course of courses_data; let i = index">
+        <td>
+            {{i}}
+        </td>
         <td>
             {{course.title}}
         </td>
